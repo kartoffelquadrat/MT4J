@@ -2,7 +2,7 @@ package org.mt4j.util.font.fontFactories;
 
 import java.util.HashMap;
 
-import javax.media.opengl.GL2;
+import com.jogamp.opengl.GL2;
 
 import org.mt4j.util.MTColor;
 import org.mt4j.util.font.FontManager;

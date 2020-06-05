@@ -1,6 +1,6 @@
 package org.mt4j;
 
-import javax.media.opengl.GL2;
+import com.jogamp.opengl.GL2;
 
 import org.mt4j.components.css.util.CSSStyleManager;
 import org.mt4j.input.IKeyListener;

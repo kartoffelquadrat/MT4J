@@ -17,7 +17,7 @@
  ***********************************************************************/
 package org.mt4j.components.visibleComponents;
 
-import javax.media.opengl.GL2;
+import com.jogamp.opengl.GL2;
 
 import org.mt4j.util.MTColor;
 import org.mt4j.util.opengl.GLMaterial;

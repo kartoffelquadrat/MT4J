@@ -18,7 +18,7 @@
 package org.mt4j.util;
 
 
-import javax.media.opengl.GL2;
+import com.jogamp.opengl.GL2;
 
 import org.mt4j.util.math.Matrix;
 

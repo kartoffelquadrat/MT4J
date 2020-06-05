@@ -17,9 +17,9 @@
  ***********************************************************************/
 package org.mt4j.components.visibleComponents.widgets.progressBar;
 
-//import javax.media.opengl.GL;
+//import com.jogamp.opengl.GL;
 
-import javax.media.opengl.GL2;
+import com.jogamp.opengl.GL2;
 
 import org.mt4j.components.TransformSpace;
 import org.mt4j.components.visibleComponents.shapes.MTRectangle;

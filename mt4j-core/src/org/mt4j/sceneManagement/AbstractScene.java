@@ -19,7 +19,7 @@ package org.mt4j.sceneManagement;
 
 import java.util.Iterator;
 
-import javax.media.opengl.GL2;
+import com.jogamp.opengl.GL2;
 
 import org.mt4j.AbstractMTApplication;
 import org.mt4j.components.MTCanvas;

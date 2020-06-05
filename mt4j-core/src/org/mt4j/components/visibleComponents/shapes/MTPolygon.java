@@ -20,7 +20,7 @@ package org.mt4j.components.visibleComponents.shapes;
 import java.nio.Buffer;
 import java.nio.FloatBuffer;
 
-import javax.media.opengl.GL2;
+import com.jogamp.opengl.GL2;
 
 import org.mt4j.components.bounds.BoundingSphere;
 import org.mt4j.components.bounds.IBoundingShape;

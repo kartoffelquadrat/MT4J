@@ -17,7 +17,7 @@
  ***********************************************************************/
 package org.mt4j.util.font;
 
-import javax.media.opengl.GL2;
+import com.jogamp.opengl.GL2;
 
 import processing.core.PGraphics;
 

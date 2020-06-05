@@ -23,7 +23,6 @@ package org.mt4j.util.opengl;
 
 //FIXME this is class is not used at the moment - hard to track all states if processing also messes with it
 
-//import javax.media.opengl.GL;
 
 
 public class GLStateHolder {

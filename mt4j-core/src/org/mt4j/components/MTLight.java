@@ -17,8 +17,8 @@
  ***********************************************************************/
 package org.mt4j.components;
 
-import javax.media.opengl.GL2;
-import javax.media.opengl.glu.GLU;
+import com.jogamp.opengl.GL2;
+import com.jogamp.opengl.glu.GLU;
 
 import org.mt4j.util.math.ToolsLight;
 import org.mt4j.util.math.Vector3D;

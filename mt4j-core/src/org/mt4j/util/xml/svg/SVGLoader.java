@@ -41,7 +41,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.Stack;
 
-import javax.media.opengl.GL2;
+import com.jogamp.opengl.GL2;
 import javax.swing.JPanel;
 
 import org.apache.batik.bridge.AbstractSVGGradientElementBridge;

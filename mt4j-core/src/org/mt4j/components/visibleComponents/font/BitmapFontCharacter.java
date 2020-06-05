@@ -19,7 +19,7 @@ package org.mt4j.components.visibleComponents.font;
 
 import java.nio.FloatBuffer;
 
-import javax.media.opengl.GL2;
+import com.jogamp.opengl.GL2;
 
 import org.mt4j.components.bounds.IBoundingShape;
 import org.mt4j.components.visibleComponents.shapes.MTRectangle;
@@ -113,7 +113,7 @@ public class BitmapFontCharacter extends MTRectangle implements IFontCharacter, 
 	
 
 	/* (non-Javadoc)
-	 * @see org.mt4j.components.visibleComponents.font.IFontCharacter#drawComponent(javax.media.opengl.GL)
+	 * @see org.mt4j.components.visibleComponents.font.IFontCharacter#drawComponent(com.jogamp.opengl.GL)
 	 */
 	//@Override
 	public void drawComponent(GL2 gl) { 

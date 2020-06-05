@@ -60,7 +60,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.WeakHashMap;
 
-import javax.media.opengl.GL2;
+import com.jogamp.opengl.GL2;
 
 import org.mt4j.components.visibleComponents.shapes.AbstractShape;
 import org.mt4j.util.MT4jSettings;

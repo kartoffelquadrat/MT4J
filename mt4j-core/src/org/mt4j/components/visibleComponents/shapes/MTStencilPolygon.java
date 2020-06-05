@@ -22,7 +22,7 @@ import java.nio.IntBuffer;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.media.opengl.GL2;
+import com.jogamp.opengl.GL2;
 
 import org.mt4j.util.math.Tools3D;
 import org.mt4j.util.math.ToolsBuffers;

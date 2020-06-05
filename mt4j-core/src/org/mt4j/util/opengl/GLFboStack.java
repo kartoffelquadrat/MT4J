@@ -19,7 +19,7 @@ package org.mt4j.util.opengl;
 
 import java.util.Stack;
 
-import javax.media.opengl.GL2;
+import com.jogamp.opengl.GL2;
 
 import org.mt4j.util.logging.ILogger;
 import org.mt4j.util.logging.MTLoggerFactory;

@@ -17,7 +17,7 @@
  ***********************************************************************/
 package org.mt4j.components.clipping;
 
-import javax.media.opengl.GL2;
+import com.jogamp.opengl.GL2;
 
 import org.mt4j.components.MTComponent;
 import org.mt4j.components.visibleComponents.AbstractVisibleComponent;

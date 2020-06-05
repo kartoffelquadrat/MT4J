@@ -25,8 +25,8 @@ import java.nio.FloatBuffer;
 import java.nio.IntBuffer;
 import java.util.StringTokenizer;
 
-import javax.media.opengl.GL2;
-import javax.media.opengl.glu.GLU;
+import com.jogamp.opengl.GL2;
+import com.jogamp.opengl.glu.GLU;
 
 import org.mt4j.AbstractMTApplication;
 import org.mt4j.components.interfaces.IMTComponent3D;

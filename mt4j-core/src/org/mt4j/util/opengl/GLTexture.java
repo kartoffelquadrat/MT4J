@@ -19,8 +19,8 @@ package org.mt4j.util.opengl;
 
 import java.nio.IntBuffer;
 
-import javax.media.opengl.GL2;
-import javax.media.opengl.glu.GLU;
+import com.jogamp.opengl.GL2;
+import com.jogamp.opengl.glu.GLU;
 
 import org.mt4j.AbstractMTApplication;
 import org.mt4j.util.PlatformUtil;

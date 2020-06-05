@@ -20,7 +20,7 @@ package org.mt4j.components.visibleComponents.widgets;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.media.opengl.GL2;
+import com.jogamp.opengl.GL2;
 
 import org.mt4j.AbstractMTApplication;
 import org.mt4j.components.TransformSpace;

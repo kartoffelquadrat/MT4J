@@ -1,38 +1,65 @@
-MT4j - Multitouch for Java
-============
+# MT4J (MS^2 patch)
 
-This is an updated version of the original [MT4j](http://www.mt4j.org) based on the last official release v0.98. The biggest difference is that it now works with [Processing](https://processing.org/) 2.x and hence, [JOGL](http://jogamp.org/jogl/www/) 2 (based on the work of the [UltraCom project](https://github.com/lodsb/UltraCom/tree/proc2), thanks for that!). We share this here so that anyone facing the same problem can make use of it.
+## About
 
-The following is the list of changes, which the commit history should easily reflect as well:
+This is an double-updated version of the original [MT4j](http://www.mt4j.org), based on the last official release v0.98. Major changes are support of a more up-to-date jogl/gluegen library and support for direct integration in maven projects.
 
-- updated the included log4j to the latest version (v1.2.17)
-- added a build file
-- TUIO libs updated to newer versions
-- added PositionAnchor literal UPPER_RIGHT to MTRectangle
-- added italic font (Arial)
-- some logging was turned off
-- some bug fixes to avoid memory leaks
-- fixed InputCursor to never remove the first event (to be able to retrieve the real starting point)
-- added StateChange literal TRANSLATED, which is fired by MTComponent on translate and propagated to all children (which do the same)
-- added StateChange literal RESIZED, which is not used within MT4j right now
-- merged mt4j-desktop and mt4j-core for easier maintenance (the dependencies were strange anyway)
-- updated to Processing 2.2.1 and JOGL 2.1.5 (included in the Processing release)
+ * [More details on code changes by my predecessor]()
+ * [More details on recent jogl version and maven support](changelog.md)
 
-## More Information
+### Context
+
+Although it seems that MT4Jis no longer maintained by the official developpers, [TouchCORE](http://touchcore.cs.mcgill.ca) still rely on MT4J functionality. This patched MT4J version eases everyday development on touchcore.
+
+## Build instructions
+
+Builing this MT4J version is a three-staged process:
+
+ * Compile the sources with eclipse
+ * Create semi-self contained jar with ant (all deps except jogl / glueglen included)
+ * Convert the jar into a maven artefact
+
+### Eclipse
+
+You have to first build the project with eclipse. This will create a ```bin``` filder, required for the second stage.
+
+ * Make sure to set the compiler compliance to java 1.8
+ * Make sure to point to the Runtime (```rt.java```) of that jdk version, so eclipse does not complain about missing system libraries.
+ * Hit ```clean and build```. Verify that you now have a ```mt4j-core/bin``` folder.
+
+### Ant
+
+Once you have built mt4j with eclipse, run the ant script, to build a jar from your compiles classes and required libraries: 
+
+ * (Install ant: ```brew install ant``` )
+ * ```cd mt4j-core```
+ * ```ant create_run_jar```
+
+### Maven
+
+If you want to use MT4J in a maven projet, you can optionally run the wrapper, to convert the jar into a maven artefact, for convenient reuse:  
+
+```./mavenize```
+
+Use the following dependency block for integration in your maven projects:
+
+```xml
+<dependency>
+	<groupId>friend.of.mcgillsel</groupId>
+	<artifactId>mt4j</artifactId>
+	<version>mspatch-2.0</version>
+</dependency>
+```
+
+## External links
 
 - [Official MT4j Website](http://www.mt4j.org)
 - [MT4j on Google Code](https://code.google.com/p/mt4j/)
 - [MT4j Documentation](http://www.mt4j.org/mediawiki/index.php/Documentation)
 - [NUI Group Forum for MT4j](http://nuigroup.com/forums/viewforum/81/)
 
-## Why?
+## Contact / Pull Requests
 
-We are working on the [TouchCORE](http://touchcore.cs.mcgill.ca) (formerly TouchRAM) project in the [Software Engineering Laboratory](http://www.cs.mcgill.ca/~joerg/SEL/SEL_Home.html) at [McGill University](http://www.mcgill.ca). When we started developing our application, MT4j v0.98 was freshly released. Unfortunately, it was never updated since, which lead us to making some adjustments our own (besides extending some of MT4j's components in our project). We always had the problem of running it with Java 7 and higher on OSX, because of JOGL 1.x only working with the JRE provided by Apple. We worked with this constraint for a long time, but finally made the switch due to other constraints, thanks to some helpful pointers we found in the [UltraCom project](https://github.com/lodsb/UltraCom/tree/proc2) (which unfortunately has many more modifications to MT4j).
-
-Because there are probably more people out there facing the same problem, we are sharing this updated version. Hope it helps! :)
-
-## Further changes
-
- * Jogl renamed a the package for the GL2 class from ```javax.media.opengl.GL2``` to something else.
- * [Here is a list of all affected java files](GL2.txt). The import line has to be updated.
-
+ * Author: Maximilian Schiedermeier ![email](email.png)
+ * Github: Kartoffelquadrat
+ * Webpage: https://www.cs.mcgill.ca/~mschie3

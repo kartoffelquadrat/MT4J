@@ -64,8 +64,8 @@
         <zip destfile="mt4j.src.zip" basedir="${workspace.dir}/mt4j-core/src/"/>
     </target>
     <target name="javadoc">
-        <javadoc 
-            access="protected" 
+        <javadoc
+            access="protected"
             author="true" 
             classpath="${workspace.dir}/mt4j-core/lib/*:${workspace.dir}/mt4j-core/lib/jogl/*" 
             destdir="${doc.dir}" 

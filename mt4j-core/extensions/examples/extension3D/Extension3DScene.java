@@ -4,7 +4,7 @@ import java.awt.event.KeyEvent;
 import java.io.File;
 import java.util.ArrayList;
 
-import javax.media.opengl.GL2;
+import com.jogamp.opengl.GL2;
 
 import org.mt4j.AbstractMTApplication;
 import org.mt4j.components.MTComponent;

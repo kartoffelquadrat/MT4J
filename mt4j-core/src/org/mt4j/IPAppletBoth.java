@@ -6,7 +6,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.PrintWriter;
 
-import javax.media.opengl.GL2;
+import com.jogamp.opengl.GL2;
 
 import processing.core.PApplet;
 import processing.core.PFont;

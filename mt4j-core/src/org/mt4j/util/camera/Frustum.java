@@ -17,7 +17,7 @@
  ***********************************************************************/
 package org.mt4j.util.camera;
 
-import javax.media.opengl.GL2;
+import com.jogamp.opengl.GL2;
 
 import org.mt4j.util.MT4jSettings;
 import org.mt4j.util.PlatformUtil;

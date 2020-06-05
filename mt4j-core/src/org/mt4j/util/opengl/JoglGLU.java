@@ -2,7 +2,7 @@ package org.mt4j.util.opengl;
 
 import java.nio.Buffer;
 
-import javax.media.opengl.glu.GLU;
+import com.jogamp.opengl.glu.GLU;
 
 public class JoglGLU implements IGLU{
 	protected GLU glu;
