@@ -2,7 +2,7 @@
 
 ## About
 
-This is an double-updated version of the original [MT4j](http://www.mt4j.org), based on the last official release v0.98. Major changes are support of a more up-to-date jogl/gluegen library and support for direct integration in maven projects.
+This is an double-updated version ([first update](https://github.com/mschoettle/mt4j)) of the original [MT4j](http://www.mt4j.org), based on the last official release v0.98. Major changes are support of a more up-to-date jogl/gluegen library and support for direct integration in maven projects.
 
  * [More details on code changes by my predecessor]()
  * [More details on recent jogl version and maven support](changelog.md)
