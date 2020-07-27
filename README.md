@@ -4,16 +4,16 @@
 
 This is an double-updated version ([first update](https://github.com/mschoettle/mt4j)) of the original [MT4j](http://www.mt4j.org), based on the last official release v0.98. Major changes are support of a more up-to-date jogl/gluegen library and support for direct integration in maven projects.
 
- * [More details on code changes by my predecessor]()
+ * [More details on code changes by my predecessor](https://github.com/mschoettle/mt4j#mt4j---multitouch-for-java)
  * [More details on recent jogl version and maven support](changelog.md)
 
 ### Context
 
-Although it seems that MT4Jis no longer maintained by the official developpers, [TouchCORE](http://touchcore.cs.mcgill.ca) still rely on MT4J functionality. This patched MT4J version eases everyday development on touchcore.
+Although it seems like MT4J is no longer maintained by the official developers, [TouchCORE](http://touchcore.cs.mcgill.ca) still relies on MT4J functionality. This patched MT4J version eases everyday development on TouchCORE.
 
 ## Build instructions
 
-Builing this MT4J version is a three-staged process:
+Building this MT4J version is a three-staged process:
 
  * Compile the sources with eclipse
  * Create semi-self contained jar with ant (all deps except jogl / glueglen included)
@@ -21,7 +21,7 @@ Builing this MT4J version is a three-staged process:
 
 ### Eclipse
 
-You have to first build the project with eclipse. This will create a ```bin``` filder, required for the second stage.
+You have to first build the project with eclipse. This will create a ```bin``` folder, required for the second stage.
 
  * Make sure to set the compiler compliance to java 1.8
  * Make sure to point to the Runtime (```rt.java```) of that jdk version, so eclipse does not complain about missing system libraries.
@@ -37,7 +37,7 @@ Once you have built mt4j with eclipse, run the ant script, to build a jar from y
 
 ### Maven
 
-If you want to use MT4J in a maven projet, you can optionally run the wrapper, to convert the jar into a maven artefact, for convenient reuse:  
+If you want to use MT4J in a maven project, you can optionally run the wrapper, to convert the jar into a maven artefact, for convenient reuse:  
 
 ```./mavenize```
 
